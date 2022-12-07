@@ -1,0 +1,232 @@
+html body {
+    background-color:wheat;
+    }
+    
+    .start-menu{
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0.6110819327731092) 0%, rgba(0,0,0,1) 45%, rgba(255,0,0,1) 100%);;
+        box-shadow: 0 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 40em;
+        margin: 0 auto;
+        margin-top: 10em; 
+        gap: 1em;
+        border-radius: 1em;
+        position: relative;
+    }
+    
+    
+    
+    .playerone-name-field,
+    .playertwo-name-field,
+    .start-btn{
+        width: 80%;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 1em;
+    border-style: none;
+    padding: 0.5em;
+    }
+    
+    .start-btn{
+        margin: 1em;
+        margin-bottom: 3em;
+        transition: 1s;
+    }
+    
+    .start-btn:hover{
+        scale: 110%;
+        background-color: green;
+    }
+    
+    .menu-header,
+    .menu{
+        margin: 0;
+        font-size: 2.5em;
+        color: wheat;
+    }
+    
+    .menu{
+        padding-bottom: 2em;
+    
+    }
+    
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        gap: 1em;
+        margin-left: 37em;
+    } 
+    .card{
+        display: flex;
+       border-radius: 2em;
+        transition: 1s;
+        transform-style:preserve-3d ;
+        display: block;
+        transform: rotateY(180deg);
+        position: relative;
+        z-index: 1;
+        margin: 0;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .card:hover{
+        box-shadow: 0 0 20px red;
+    }
+    
+    .display-none{
+        display: none;
+    }
+    
+    .hide{
+        visibility:hidden;
+    }
+    
+    .card-img{
+        backface-visibility: hidden;
+    }
+    .flip-front{
+        transform: rotateY(0deg);
+    }
+    
+    .flip-back{
+        transform: rotateY(180deg);
+    }
+    
+    .card::after{
+        content: "";
+        position: absolute;
+        background-image: url(https://www.shareicon.net/data/256x256/2016/08/01/640631_game_512x512.png);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .card::before{
+        content: "";
+        position: absolute;
+        backface-visibility: hidden;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 2em;
+        width: 100%;
+        height: 100%;
+        background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.6110819327731092) 0%, rgba(0,0,0,1) 45%, rgba(255,0,0,1) 100%);
+    
+    }
+    
+    
+    .main-wrapper{
+        height: 100vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .side-wrapper{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,0.6110819327731092) 0%, rgba(0,0,0,1) 45%, rgba(255,0,0,1) 100%);
+        width: 20%;
+        color: wheat;
+        border-radius: 1em;
+        box-shadow: 0 0 20px whitesmoke;
+        height: 100%;
+        margin-right:2em ;
+    }
+    .history-container{
+        background-color: white;
+        box-shadow: 0 0 15px whitesmoke;
+        border-radius: 1em;
+        width: 80%;
+        height: 65%;
+        color: black;
+    }
+    .history-para{
+        font-size: 1.2rem;
+        padding-left: 1em;
+    }
+    .history-h3{
+        text-align: center;
+        font-size: 2em;
+        border-bottom: 2px solid black;
+    }
+    
+    .playersturn{
+        font-size: 2em;
+    }
+    
+    .pikachu{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .winner-announcment{
+        background-color: rgb(240, 85, 85);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15em;
+       color: wheat;
+    }
+    
+    .play-again{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+        border-radius: 1em;
+        border-style: none;
+        margin: 1em;
+    }
+    
+    .play-again:hover{
+    
+        background-color: green;
+    }
+    
+    .winner-name{
+        font-size: 4rem;
+    }
+    
+    .winner-points{
+        font-size: 3rem;
+    }
+    
+    .restart-btn,
+    .end-btn{
+        width: 80%;
+        margin-top: .4em;
+        font-size: 1.5rem;
+        padding: 0.5em 1em;
+        border-radius: 1em;
+        border-style: none;
+    }
+    
+    .end-btn{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .restart-btn:hover,
+    .end-btn:hover{
+    scale: 110%;
+    background-color: red;
+    }
+    
